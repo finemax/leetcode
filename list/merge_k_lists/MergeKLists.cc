@@ -31,7 +31,7 @@ ListNode* MergeTwoLists(ListNode* l1, ListNode* l2) {
     p = p->next;
   }
   p->next = l1 == nullptr ? l2 : l1;
-  return p->next;
+  return head->next;
 }
 
 ListNode* MergeKLists(std::vector<ListNode*>& lists) {
